@@ -132,7 +132,7 @@ fi
 [ -z "$date" ] || EJABBERD_OPTS="${EJABBERD_OPTS} log_rotate_date '$date'"
 [ -z "$EJABBERD_OPTS" ] || EJABBERD_OPTS="-ejabberd ${EJABBERD_OPTS}"
 
-[ -d "$SPOOL_DIR" ] || $EXEC_CMD "mkdir -p $SPOOL_DIR"
+[ -d "\"$SPOOL_DIR\"" ] || $EXEC_CMD "mkdir -p \"$SPOOL_DIR\""
 cd "$SPOOL_DIR"
 
 # export global variables
